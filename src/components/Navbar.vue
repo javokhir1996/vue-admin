@@ -50,14 +50,15 @@
             <div class="page-title">
                 <h1>Dashboard</h1>
                 <ul class="breadcrumb">
-                    <li>Home</li>
-                    <li>Dashboard</li>
+                    <li><RouterLink :to="{ name: 'home' }">Main</RouterLink> </li>
+                    <li><RouterLink :to="{}">{{currentRouteName}}</RouterLink></li>
                 </ul>
             </div>
         </div>
     </div>
 </template>
 <script>
+import { useRoute  } from 'vue-router'
 export default {
     data() {
         return {
@@ -70,6 +71,11 @@ export default {
             this.$emit('currentItem', this.sidebar)
         }
     },
+    computed: {
+    currentRouteName() {
+        return this.$route.name;
+    }
+}
 }
 </script>
 <style>
@@ -110,8 +116,10 @@ export default {
 }
 .toolbar .page-title h1{
     color: #181c32;
-    font-size: 1.35rem ;
+    font-size: 20px ;
     font-weight: 600;
+    margin: 0 !important;
+    text-align: start;
 }
 .breadcrumb{
     display: flex;
@@ -120,10 +128,26 @@ export default {
 }
 .breadcrumb li{
     list-style: none;
-    font-size: 0.95rem;
+    position: relative;
+    padding-right: 10px;
+}
+.breadcrumb li a{
+    font-size: 14px;
     font-weight: 500;
     color: #a1a5b7;
     margin-right: 10px;
+    text-decoration: none;
+}
+.breadcrumb li:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 1.5px;
+    margin: auto;
+    top: 5px;
+    right: 8px;
+    background-color: #a1a5b7;
+    bottom: 0;
 }
 .toggle-menu.active{
     transform: rotate(180deg) ;
