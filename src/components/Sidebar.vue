@@ -34,7 +34,7 @@
                 <span>Pages</span>
             </div>
             <div class="lists-content">
-                <RouterLink  class="list-page" :to="{ name: 'home' }">
+                <RouterLink   class="list-page" :to="{ name: 'home' }">
                     <img src="../assets/icons/home-2-svgrepo-com.svg" alt="">
                     Home
                 </RouterLink>
@@ -185,6 +185,9 @@ export default {
     justify-content: center;
     padding-top: 4px;
 }
+.setting-user:hover{
+    cursor: pointer;
+}
 
 .setting-user img {
     width: 23px;
@@ -259,6 +262,7 @@ export default {
     border-radius: 0.475rem;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .side-menu .lists-content .list-page img {

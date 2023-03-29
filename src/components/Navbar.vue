@@ -98,6 +98,9 @@ export default {
     width: 16px;
     filter: brightness(6);
 }
+.toggle-menu:hover{
+    cursor: pointer;
+}
 .toolbar{
     padding: 0 30px;
     display: flex;
