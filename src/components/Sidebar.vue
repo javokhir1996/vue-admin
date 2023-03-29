@@ -286,6 +286,9 @@ export default {
 .side-footer .link-docs span {
     color: #B5B5C3;
 }
-
-
+.lists-content a.router-link-exact-active {
+    transition: color 0.2s ease;
+    background-color: #009ef7;
+    color: #ffffff !important;
+ }
 </style>
