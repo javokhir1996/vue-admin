@@ -1,6 +1,6 @@
 <template>
     <div>
-      dashboard
+      <h1>Dashboard</h1>
     </div>
   </template>
   <script>
@@ -8,6 +8,8 @@
   }
   </script>
   <style>
-    
+     h1{
+    text-align: center;
+  }
   </style>
   
