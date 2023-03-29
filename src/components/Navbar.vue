@@ -120,6 +120,7 @@ export default {
     font-weight: 600;
     margin: 0 !important;
     text-align: start;
+    line-height: 20px;
 }
 .breadcrumb{
     display: flex;
