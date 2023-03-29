@@ -106,7 +106,7 @@ export default {
     display: flex;
     align-items: center;
     width: 100%;
-    box-shadow: 0px -8px 16px 0px rgb(34 60 80 / 20%);
+    box-shadow: 0px 20px 80px -20px rgb(34 60 80 / 20%);
 }
 .toolbar .page-title h1{
     color: #181c32;
