@@ -67,6 +67,7 @@ export default {
 .login-content>div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .login-content .login-info {
@@ -88,5 +89,16 @@ export default {
 .login-content .login-info div h2 {
     color: #fff;
     font-weight: 400
+}
+@media screen and (max-width: 1100px) {
+    .login-content>div{
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-content .login-info div{
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 </style>

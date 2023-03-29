@@ -263,6 +263,7 @@ export default {
     display: flex;
     align-items: center;
     text-decoration: none;
+    padding-left: 3px;
 }
 
 .side-menu .lists-content .list-page img {
